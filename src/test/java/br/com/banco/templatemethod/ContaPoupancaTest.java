@@ -1,7 +1,5 @@
-package br.com.banco;
+package br.com.banco.templatemethod;
 
-import br.com.banco.templatemethod.ContaCorrente;
-import br.com.banco.templatemethod.ContaPoupanca;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,7 +9,7 @@ public class ContaPoupancaTest {
 
     @Test
     void deveCalcularTarifaMensalCorretamente() {
-        
+
         ContaPoupanca conta = new ContaPoupanca("004-1", "Fernanda Rocha", 1000.00);
         assertEquals(5.00, conta.calcularTarifaMensal(), 0.001);
     }
